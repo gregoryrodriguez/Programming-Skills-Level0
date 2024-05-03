@@ -7,7 +7,8 @@
 * The system must allow users to deposit, withdraw, view, and transfer money.
 * The system must display a menu for users to perform transactions.
 */
-
+let username = 'usuario';
+let password = '1234'
 let int = 3;
 let balance = 2000;
 
