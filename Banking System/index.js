@@ -17,14 +17,18 @@ function login(){
     user = prompt('Por favor, ingresa tu username: ');
     pass = prompt('Ingrese su contraseña')
 
-    if(user == 'usuario' && pass === '1234'){
+    if(user == username && pass === password){
         menu()
     }else if(user === "" || pass === ""){
         alert("No dejar campos vacios")
         login()
     }else{
-        if(int > 0 ){
+        if(int > 1 ){
             alert('Usuario o Contraseña incorrecta. Quedan ' + int-- + " intentos")
+            login()
+        }else if(int === 1){
+            alert('Usuario o Contraseña incorrecta. Ultimo intento')
+            int--;
             login()
         }else{
             alert("SU CUENTA HA SIDO BLOOQUEDA")
